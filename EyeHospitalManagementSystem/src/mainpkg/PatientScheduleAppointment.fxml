@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="658.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.PatientScheduleAppointmentController">
+   <children>
+      <Label layoutX="25.0" layoutY="99.0" prefHeight="27.0" prefWidth="131.0" text="Select Doctor Id" />
+      <Label layoutX="25.0" layoutY="141.0" prefHeight="27.0" prefWidth="131.0" text="Select Date" />
+      <Label layoutX="25.0" layoutY="182.0" prefHeight="27.0" prefWidth="131.0" text="Select Time" />
+      <ComboBox fx:id="selectDoctorIdCb" layoutX="156.0" layoutY="97.0" prefHeight="31.0" prefWidth="218.0" />
+      <ComboBox fx:id="selectTimeCb" layoutX="156.0" layoutY="180.0" prefHeight="31.0" prefWidth="218.0" />
+      <TableView fx:id="patientScheduleAppointmentTableView" layoutX="8.0" layoutY="262.0" prefHeight="271.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="serialNoTableColumn" prefWidth="76.0" text="Serial No." />
+          <TableColumn fx:id="dateTableColumn" prefWidth="117.0" text="Date" />
+            <TableColumn fx:id="timeTableColumn" prefWidth="171.0" text="Time" />
+            <TableColumn fx:id="doctorIdTableColumn" prefWidth="185.0" text="Doctor ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="38.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#showAppointmentInfoButtonOnMouseClicked" prefHeight="31.0" prefWidth="238.0" text="SHOW APPOINTMENT INFO" />
+      <Button layoutX="291.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#addAppointmentInfoButtonOnMouseClicked" prefHeight="31.0" prefWidth="247.0" text="ADD APPOINTMENT INFO" />
+      <Label layoutX="24.0" layoutY="62.0" prefHeight="21.0" prefWidth="113.0" text="Select Serial No." />
+      <ComboBox fx:id="selectSerialNoCb" layoutX="156.0" layoutY="57.0" prefHeight="31.0" prefWidth="218.0" />
+      <DatePicker fx:id="selectDateDatePicker" layoutX="156.0" layoutY="139.0" />
+      <Button layoutX="252.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#homeButtonOnMouseClicked" text="HOME" />
+   </children>
+</AnchorPane>

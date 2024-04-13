@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DoctorManageProcedureController">
+   <children>
+      <Label layoutX="30.0" layoutY="30.0" prefHeight="21.0" prefWidth="139.0" text="Select Patient ID" />
+      <Label layoutX="30.0" layoutY="68.0" prefHeight="21.0" prefWidth="139.0" text="Select Procedure " />
+      <Label layoutX="30.0" layoutY="106.0" prefHeight="21.0" prefWidth="117.0" text="Select Day" />
+      <Label layoutX="30.0" layoutY="146.0" prefHeight="21.0" prefWidth="117.0" text="Select Time" />
+      <ComboBox fx:id="selectPatientIdCb" layoutX="169.0" layoutY="25.0" prefHeight="31.0" prefWidth="202.0" />
+      <ComboBox fx:id="selectProcedeurCb" layoutX="169.0" layoutY="63.0" onAction="#selectProcedureCbOnMouseCLicked" prefHeight="31.0" prefWidth="202.0" />
+      <Button layoutX="406.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#showInfoButtonOnMouseClicked" prefHeight="31.0" prefWidth="170.0" text="SHOW INFO" />
+      <Button layoutX="406.0" layoutY="101.0" mnemonicParsing="false" onMouseClicked="#addInfoButtonOnMouseClicked" prefHeight="31.0" prefWidth="170.0" text="ADD INFO" />
+      <TableView fx:id="manageProcedureTableView" layoutX="14.0" layoutY="189.0" prefHeight="228.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="patientIdTableColumn" prefWidth="162.0" text=" Patient ID" />
+          <TableColumn fx:id="procedureTableColumn" prefWidth="153.0" text=" Procedure " />
+            <TableColumn fx:id="dayTableColumn" prefWidth="131.0" text=" Day" />
+            <TableColumn fx:id="timeTableColumn" prefWidth="131.0" text=" Time" />
+        </columns>
+      </TableView>
+      <Label fx:id="selectDayLable" layoutX="169.0" layoutY="101.0" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: white;" />
+      <Label fx:id="selectTimeLable" layoutX="169.0" layoutY="141.0" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: white;" />
+      <Button layoutX="406.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#homeButtonOnMouseClicked" prefHeight="31.0" prefWidth="170.0" text="HOME" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="405.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.PatientDashboardSceneController">
+   <children>
+      <Label layoutX="54.0" layoutY="40.0" prefHeight="41.0" prefWidth="276.0" text="               PATIENT DASHBOARD" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="65.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#scheduleAppointmentButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="SCHEDULE APPOINTMENT" />
+      <Button layoutX="65.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#appointmentHistoryButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="APPOINTMENT HISTORY" />
+      <Button layoutX="65.0" layoutY="208.0" mnemonicParsing="false" onMouseClicked="#medicationRefillRequestButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="MEDICATION REFILL REQUEST" />
+      <Button layoutX="65.0" layoutY="258.0" mnemonicParsing="false" onMouseClicked="#medicalReportButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="MEDICAL REPORT" />
+      <Button layoutX="65.0" layoutY="309.0" mnemonicParsing="false" onMouseClicked="#communicationButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="COMMUNICATION" />
+      <Button layoutX="65.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#feedbackButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="FEEDBACK" />
+      <Button layoutX="65.0" layoutY="462.0" mnemonicParsing="false" onMouseClicked="#billButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="BILL" />
+      <Button layoutX="65.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#educationButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="EDUCATION" />
+   </children>
+</AnchorPane>
