@@ -7,17 +7,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="297.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.PatientLoginSceneController">
+<AnchorPane id="AnchorPane" prefHeight="315.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.PatientLoginSceneController">
    <children>
       <Label layoutX="31.0" layoutY="113.0" prefHeight="29.0" prefWidth="120.0" text="Username" />
       <Label layoutX="31.0" layoutY="168.0" prefHeight="29.0" prefWidth="120.0" text="Password" />
       <TextField fx:id="usernameTextFiield" layoutX="169.0" layoutY="112.0" prefHeight="31.0" prefWidth="243.0" />
       <PasswordField fx:id="passwordPasswordField" layoutX="169.0" layoutY="167.0" prefHeight="31.0" prefWidth="243.0" />
-      <Button layoutX="202.0" layoutY="220.0" mnemonicParsing="false" onAction="#LoginButtonOnClick" prefHeight="31.0" prefWidth="196.0" text="Login" />
+      <Button layoutX="202.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#loginButtonOnMouseClicked" prefHeight="31.0" prefWidth="196.0" text="Login" />
       <Label layoutX="16.0" layoutY="31.0" prefHeight="43.0" prefWidth="425.0" text="Please Login To Your Account With Username &amp; Password">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
+      <Button layoutX="260.0" layoutY="259.0" mnemonicParsing="false" onMouseClicked="#userButtonOnMouseClicked" prefHeight="31.0" prefWidth="80.0" text="User" />
    </children>
 </AnchorPane>

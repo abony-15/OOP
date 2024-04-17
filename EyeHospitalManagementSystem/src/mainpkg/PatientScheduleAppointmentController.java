@@ -12,7 +12,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -78,11 +77,11 @@ public class PatientScheduleAppointmentController implements Initializable {
     patientScheduleAppointmentTableView.refresh();
     ObjectInputStream ois = null;
     try {
-         Appointment reqappoint;
+         Appointment appoint;
          ois = new ObjectInputStream(new FileInputStream("Appointment Request.bin"));
          while(true){
-         reqappoint = (Appointment) ois.readObject();
-         patientScheduleAppointmentTableView.getItems().add(reqappoint);
+         appoint = (Appointment) ois.readObject();
+         patientScheduleAppointmentTableView.getItems().add(appoint);
          }
     
         } catch (Exception ex) {
@@ -105,12 +104,12 @@ public class PatientScheduleAppointmentController implements Initializable {
     ObjectOutputStream oos;
     
     
-    Appointment reqappoint = new Appointment (selectDoctorIdCb.getValue(),
+    Appointment appoint = new Appointment (selectDoctorIdCb.getValue(),
                                               selectDateDatePicker.getValue(),
                                               selectTimeCb.getValue(),
                                               selectSerialNoCb.getValue());
     
-    patientScheduleAppointmentTableView.getItems().add(reqappoint);
+    patientScheduleAppointmentTableView.getItems().add(appoint);
     
     selectDoctorIdCb.setValue(null);
     selectDateDatePicker.setValue(null);
@@ -126,7 +125,7 @@ public class PatientScheduleAppointmentController implements Initializable {
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);
             }
-            oos.writeObject(reqappoint);
+            oos.writeObject(appoint);
             System.out.println(oos.toString());
             oos.close();
         } catch (Exception ex) {

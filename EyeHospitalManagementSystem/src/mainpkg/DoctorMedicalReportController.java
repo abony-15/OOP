@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.URL;
-//import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -33,8 +32,6 @@ import javafx.stage.Stage;
  * @author AZAAN
  */
 public class DoctorMedicalReportController implements Initializable {
-
-    //ArrayList<MedicalReport>reportList;
 
     @FXML
     private TableView<MedicalReport> medicalReportTableView;
@@ -60,7 +57,6 @@ public class DoctorMedicalReportController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-    //reportList = new ArrayList<MedicalReport>();
 
     diagnosesTableColumn.setCellValueFactory(new PropertyValueFactory<MedicalReport,String>("diagnoses"));
     treatmentTableColumn.setCellValueFactory(new PropertyValueFactory<MedicalReport,String>("treatment"));

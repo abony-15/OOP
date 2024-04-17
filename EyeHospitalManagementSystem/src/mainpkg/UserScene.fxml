@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="298.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.UserSceneController">
+   <children>
+      <Label layoutX="110.0" layoutY="28.0" prefHeight="53.0" prefWidth="365.0" text="BANGLADESH EYE HOSPITAL">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="91.0" prefHeight="21.0" prefWidth="223.0" text="Select Your Username For Login" />
+      <ComboBox fx:id="selectUsernameLoginCb" layoutX="167.0" layoutY="135.0" onMouseClicked="#selectUsernameLoginCbButtonOnMouseClicked" prefHeight="31.0" prefWidth="223.0" />
+   </children>
+</AnchorPane>

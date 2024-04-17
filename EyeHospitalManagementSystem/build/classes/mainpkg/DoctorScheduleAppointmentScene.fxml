@@ -17,8 +17,8 @@
       <TableView fx:id="doctorScheduleAppointmentTableView" layoutX="27.0" layoutY="233.0" prefHeight="376.0" prefWidth="514.0">
          <columns>
             <TableColumn fx:id="patientIdTableColumn" prefWidth="225.0" text="Patient ID" />
-            <TableColumn fx:id="dateTableColumn" prefWidth="147.0" text="Date" />
-            <TableColumn fx:id="timeTableColumn" prefWidth="141.0" text="Time" />
+            <TableColumn fx:id="doctorDateTableColumn" prefWidth="147.0" text="Date" />
+            <TableColumn fx:id="doctorTimeTableColumn" prefWidth="141.0" text="Time" />
          </columns>
       </TableView>
       <Button layoutX="284.0" layoutY="621.0" mnemonicParsing="false" onMouseClicked="#createAppointmentInfoButtonOnMouseClicked" prefHeight="31.0" prefWidth="218.0" text="CREATE APPOINTMENT INFO" />
@@ -29,11 +29,11 @@
       <Button layoutX="799.0" layoutY="568.0" mnemonicParsing="false" onMouseClicked="#showAppointmentRequestButtonOnMouseClicked" prefHeight="31.0" prefWidth="239.0" text="SHOW APPOINTMENT REQUEST" />
       <Button layoutX="233.0" layoutY="667.0" mnemonicParsing="false" onMouseClicked="#homeButtonOnMouseClicked" text="HOME" />
       <Line endX="-100.0" endY="702.0" layoutX="710.0" layoutY="39.0" startX="-100.0" startY="-28.0" />
-      <TableView fx:id="patientScheduleAppointmentTableView" layoutX="634.0" layoutY="277.0" prefHeight="271.0" prefWidth="550.0">
+      <TableView fx:id="patientScheduleAppointmentTableView" layoutX="626.0" layoutY="278.0" prefHeight="271.0" prefWidth="550.0">
          <columns>
             <TableColumn fx:id="serialNoTableColumn" prefWidth="76.0" text="Serial No." />
-            <TableColumn fx:id="dateTableColumn1" prefWidth="117.0" text="Date" />
-            <TableColumn fx:id="timeTableColumn1" prefWidth="171.0" text="Time" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="117.0" text="Date" />
+            <TableColumn fx:id="timeTableColumn" prefWidth="171.0" text="Time" />
             <TableColumn fx:id="doctorIdTableColumn" prefWidth="185.0" text="Doctor ID" />
          </columns>
       </TableView>

@@ -17,6 +17,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -41,7 +42,7 @@ public class PatientLoginSceneController implements Initializable {
     }
 
     @FXML
-    private void LoginButtonOnClick(ActionEvent event) throws IOException {
+    private void loginButtonOnMouseClicked(MouseEvent event) throws IOException {
     String password = passwordPasswordField.getText();
     if (!password.equals("123")) {
         Wrong.show();
@@ -65,7 +66,14 @@ public class PatientLoginSceneController implements Initializable {
     Scene scene = new Scene(parent);
     Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
     window.setScene(scene);
-    window.show();
-    }
+    window.show();}
+
+    @FXML
+    private void userButtonOnMouseClicked(MouseEvent event) throws IOException {
+    Parent parent = FXMLLoader.load(getClass().getResource("UserScene.fxml"));
+    Scene scene = new Scene(parent);
+    Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+    window.setScene(scene);
+    window.show();}
     
 }

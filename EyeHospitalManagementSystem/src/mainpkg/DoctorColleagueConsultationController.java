@@ -4,6 +4,8 @@
  */
 package mainpkg;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -13,7 +15,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -25,8 +26,6 @@ import javafx.stage.Stage;
  * @author AZAAN
  */
 public class DoctorColleagueConsultationController implements Initializable {
-    Alert Unfilled = new Alert(Alert.AlertType.WARNING,"Please EnterEverything");
-    Alert Send = new Alert(Alert.AlertType.INFORMATION,"Send Succesfully");
 
     @FXML
     private ComboBox<String> selectDoctorIdCb;
@@ -46,25 +45,17 @@ public class DoctorColleagueConsultationController implements Initializable {
 
     @FXML
     private void sendButtonOnMouseClicked(MouseEvent event) {
-    String doctorId = selectDoctorIdCb.getValue();
-    if (doctorId == null || doctorId.isEmpty()) {
-    Unfilled.show();
-    return;
-}
+    String content = consultationNeedForTexField.getText() ;
+    File outputFile = new File("Consultation.txt");
 
-    String consultantPartner = consultationWithCb.getValue();
-    if (consultantPartner == null || consultantPartner.isEmpty()) {
-    Unfilled.show();
-    return;
-}
-    String consultationTopic = consultationNeedForTexField.getText();
-    if (consultationTopic == null || consultationTopic.isEmpty()){
-    Unfilled.show();
-    return;
-    }
-
-    Consultation consultation = new Consultation (doctorId, consultantPartner, consultationTopic);
-    Send.show();
+    try {
+        FileWriter writer = new FileWriter(outputFile);
+        writer.write(content);
+        writer.close();
+        System.out.println("Sending done");
+    } catch (IOException e) {
+        e.printStackTrace();
+        }
     }
 
     @FXML
@@ -74,5 +65,5 @@ public class DoctorColleagueConsultationController implements Initializable {
     Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
     window.setScene(scene);
     window.show();
+        }
     }
-}

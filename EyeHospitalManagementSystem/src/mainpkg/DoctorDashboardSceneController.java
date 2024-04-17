@@ -95,5 +95,12 @@ public class DoctorDashboardSceneController implements Initializable {
     Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
     window.setScene(scene);
     window.show();}
-    
+
+    @FXML
+    private void userButtonOnMouseClicked(MouseEvent event) throws IOException {
+    Parent parent = FXMLLoader.load(getClass().getResource("UserScene.fxml"));
+    Scene scene = new Scene(parent);
+    Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+    window.setScene(scene);
+    window.show();}
 }

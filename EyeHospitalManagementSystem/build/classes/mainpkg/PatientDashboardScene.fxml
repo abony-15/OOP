@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="405.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.PatientDashboardSceneController">
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.PatientDashboardSceneController">
    <children>
       <Label layoutX="54.0" layoutY="40.0" prefHeight="41.0" prefWidth="276.0" text="               PATIENT DASHBOARD" textAlignment="JUSTIFY">
          <font>
@@ -21,5 +20,6 @@
       <Button layoutX="65.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#feedbackButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="FEEDBACK" />
       <Button layoutX="65.0" layoutY="462.0" mnemonicParsing="false" onMouseClicked="#billButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="BILL" />
       <Button layoutX="65.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#educationButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="EDUCATION" />
+      <Button layoutX="163.0" layoutY="509.0" mnemonicParsing="false" onMouseClicked="#userButtonOnMouseClicked" prefHeight="31.0" prefWidth="80.0" text="User" />
    </children>
 </AnchorPane>

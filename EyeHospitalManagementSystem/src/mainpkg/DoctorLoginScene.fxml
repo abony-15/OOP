@@ -13,11 +13,12 @@
       <Label layoutX="39.0" layoutY="185.0" prefHeight="29.0" prefWidth="120.0" text="Password" />
       <TextField fx:id="UsernameTextFiield" layoutX="170.0" layoutY="127.0" prefHeight="31.0" prefWidth="243.0" />
       <PasswordField fx:id="PasswordPasswordField" layoutX="170.0" layoutY="184.0" prefHeight="31.0" prefWidth="243.0" />
-      <Button layoutX="193.0" layoutY="237.0" mnemonicParsing="false" onAction="#LoginButtonOnClick" prefHeight="31.0" prefWidth="196.0" text="Login" />
+      <Button layoutX="194.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#LoginButtonOnMouseClicked" prefHeight="31.0" prefWidth="196.0" text="Login" />
       <Label layoutX="26.0" layoutY="41.0" prefHeight="43.0" prefWidth="425.0" text="Please Login To Your Account With Username &amp; Password">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
+      <Button layoutX="252.0" layoutY="262.0" mnemonicParsing="false" onMouseClicked="#userButtonOnMouseClicked" prefHeight="31.0" prefWidth="80.0" text="User" />
    </children>
 </AnchorPane>

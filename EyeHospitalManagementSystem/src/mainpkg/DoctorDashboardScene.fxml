@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DoctorDashboardSceneController">
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DoctorDashboardSceneController">
    <children>
       <Button layoutX="46.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#scheduleAppointmentButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="SCHEDULE APPOINTMENT" />
       <Button layoutX="46.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#patientDetailsButtonOnMouseClicked" prefHeight="31.0" prefWidth="276.0" text="PATIENT DETAILS" />
@@ -20,5 +20,6 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
+      <Button layoutX="152.0" layoutY="482.0" mnemonicParsing="false" onMouseClicked="#userButtonOnMouseClicked" prefHeight="31.0" prefWidth="80.0" text="User" />
    </children>
 </AnchorPane>
